@@ -1,0 +1,40 @@
+/* Resume Section */
+.resume-wrapper {
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+.resume-actions {
+    margin-bottom: var(--spacing-md);
+}
+
+.resume-actions p {
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.resume-actions .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pdf-viewer {
+    border-radius: 8px;
+    overflow: hidden;
+    background: #222;
+    border: 1px solid var(--glass-border);
+    height: 600px;
+}
+
+.pdf-viewer iframe {
+    border: none;
+    display: block;
+}
+
+/* Make iframe responsive */
+@media (max-width: 600px) {
+    .pdf-viewer {
+        height: 400px;
+    }
+}
